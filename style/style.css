@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    letter-spacing: 5px;
+    align-items: flex-start;
+    min-height: 8vh;
+    background-color: #2c3e50;
+    padding: 10px 0;
+
+}
+
+nav .logo {
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.detail {
+    width: 100px;
+}
+
+.detail li{
+    font-size: 15px;
+    list-style: none;
+    margin: 20px 0;
+}
+
+.listItem{
+    border: 1px solid #ccc;
+    min-height: 400px;
+}
+
+
+
+

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h1>Kasir Dadakan</h1>
+        </div>
+    </nav>
+    <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-md-auto">
+                        <table class="table">
+                            <tr>
+                                <td>
+                                    <select name="" id="barang" required>
+                                        <option value="">----pilih barang-----</option>
+                                        <option value="30000">Nescafe</option>
+                                        <option value="15000">Sariroti</option>
+                                        <option value="8000">Gulaku</option>
+                                        <option value="5000">Oreo</option>
+                                        <option value="2500">Indomie</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <label id="x" ></label>
+                                    <label for="jumlah">Jumlah :</label>
+                                </td>
+                                <td><input type="number" id="jumlah" min="1" max="10" required></td>
+                                <td><button type="button" name="add" id="add" >Tambah</button></td>
+                                <td><button type="button" name="delete" id="delete" >Hapus</button></td>
+                            </tr>
+                        </table>
+                </div>
+            </div>
+            
+            <div class="listItem">     
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <td>Nama Barang</td>
+                            <td>Harga</td>
+                            <td>Jumlah</td>
+                            <td>Total</td>
+                        </tr>
+                    </thead>
+                    <tbody id="daftarPesanan">
+
+                    </tbody>
+                </table>
+            </div>   
+            <div>
+                <ul class="detail">
+                    <li>
+                        <label for="totalSementara">Grand Total :</label><br>
+                        <input id="totalSementara" type="text" readonly>
+                    </li>
+                    <li>
+                        <label for="diskon">Diskon:</label><br>
+                        <input id="diskon" type="number" min="1" max="100">
+                    </li>
+                    <li>
+                        <label for="jumlah-uang">Jumlah Uang :</label>
+                        <input id="jumlah-uang" type="text">
+                       
+                    </li>
+                    <li>
+                        <label for="sisa">Total Keseluruhan :</label><br>
+                        <input id="sisa" type="number" readonly>
+                    </li>
+                    <li>
+                        <label for="kembalian">Kembalian :</label>
+                        <input id="kembalian" type="number" readonly>
+                    </li>
+                    <li><button type="button" name="jumlah" id="jumlahKeseluruhan">Jumlah</button></li>
+                </ul> 
+            </div> 
+        </main>
+    </div>        
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
